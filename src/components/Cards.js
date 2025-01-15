@@ -2,18 +2,18 @@ import React from "react";
 import Card from "./Card";
 
 const Cards = ({ courses }) => {
-  let allCourses = [];
-  const getCourses = () => {
-    Object.values(courses).forEach((courseCategory) => {
-      courseCategory.forEach((course) => {
-        allCourses.push(course);
+  function getCourses() {
+    let allCourses = [];
+    Object.values(courses).forEach((array) => {
+      array.forEach((courseData) => {
+        allCourses.push(courseData);
       });
-      return allCourses;
     });
-  };
+    return allCourses;
+  }
 
   return (
-    <div>
+    <div className="flex flex-wrap justify-center gap-4 mb-4">
       {getCourses().map((course) => {
         return <Card key={course.id} course={course} />;
       })}
