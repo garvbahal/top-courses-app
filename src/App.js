@@ -39,7 +39,7 @@ function App() {
         <Navbar />
       </div>
 
-      <div >
+      <div>
         <div>
           <Filter
             filterData={filterData}
