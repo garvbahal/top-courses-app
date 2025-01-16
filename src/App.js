@@ -23,10 +23,10 @@ function App() {
       let output = await response.json();
 
       setCourses(output.data);
+      setLoading(false);
     } catch (err) {
       toast.error("Something went wrong");
     }
-    setLoading(false);
   }
 
   useEffect(() => {

@@ -3,14 +3,16 @@ import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const Card = ({ course, likedCourses, setLikedCourses }) => {
-  // let liked = false;
+  // in this you have no track which things you liked and which you don't
+  // so can't use in future
+  // const [liked, setLiked] = useState(false);
   // function clickHandler() {
   //   if (liked === false) {
   //     toast.success("like added");
-  //     liked = true;
+  //     setLiked(true);
   //   } else {
   //     toast.warning("like removed");
-  //     liked = false;
+  //     setLiked(false);
   //   }
   // }
 
